@@ -4,14 +4,15 @@ body {
   width: 100%;
 }
 
+/* MOBILE */
 .portada-mobile {
-  min-height: 80vh;
-  padding-top: 40px;
+  min-height: 100vh;
 }
 
+/* DESKTOP */
 @media (min-width: 768px) {
   .portada-mobile {
-    min-height: 100vh;
+    min-height: 100vh; /* mantiene el look que ya te gusta */
   }
 }
 
