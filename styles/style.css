@@ -1,0 +1,179 @@
+@font-face {
+    font-family: "bungee";
+    src: url(../fonts/Bungee-Regular.ttf);
+}
+
+@font-face {
+    font-family: "bebas";
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+/* =======================
+   TIPOGRAFÍAS
+======================= */
+
+.text-bungee {
+    font-family: "bungee";
+}
+
+.text-bebas {
+    font-family: "bebas";
+}
+
+.text-roboto {
+    font-family: "roboto";
+}
+
+/* =======================
+   COLORES Y TAMAÑOS
+======================= */
+
+.text-rosa {
+    color: #DA9FA7;
+}
+
+.tamano {
+    font-size: 5rem;
+}
+
+.tamano2 {
+    font-size: 3rem;
+}
+
+/* =======================
+   PORTADA PRINCIPAL
+======================= */
+
+.portada {
+    min-height: 100vh;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../assets/portada.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/* =======================
+   SECCIÓN PROPIEDADES
+======================= */
+
+#menu-propiedades {
+    min-height: 150vh;
+}
+
+/* La card no deja que el zoom se salga */
+.card {
+    overflow: hidden;
+}
+
+.mini-portada-casas,
+.mini-portada-departamentos,
+.mini-portada-locales,
+.mini-portada-lotes,
+.mini-portada-fincas {
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+
+.mini-portada-casas {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../assets/Casas.jpg");
+}
+
+.mini-portada-departamentos {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../assets/Departamentos.jpg");
+}
+
+.mini-portada-locales {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../assets/Locales.jpg");
+}
+
+.mini-portada-lotes {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../assets/Lotes.jpg");
+}
+
+.mini-portada-fincas {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../assets/Fincas.jpg");
+}
+
+
+.mini-portada-casas:hover,
+.mini-portada-departamentos:hover,
+.mini-portada-locales:hover,
+.mini-portada-lotes:hover,
+.mini-portada-fincas:hover {
+    transform: scale(1.05);
+}
+
+
+.mini-portada-casas p,
+.mini-portada-departamentos p,
+.mini-portada-locales p,
+.mini-portada-lotes p,
+.mini-portada-fincas p {
+    transition: transform 0.4s ease;
+}
+
+.mini-portada-casas:hover p,
+.mini-portada-departamentos:hover p,
+.mini-portada-locales:hover p,
+.mini-portada-lotes:hover p,
+.mini-portada-fincas:hover p {
+    transform: scale(1.1);
+}
+
+/* =======================
+   SECCIÓN DESTACADAS
+======================= */
+
+#slice-destacadas{
+    min-height: 100vh;
+}
+
+.slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-track {
+    display: flex;
+    gap: 2rem;
+    will-change: transform;
+}
+
+.slider-card {
+    min-width: 250px;
+    text-align: center;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.slider-card img {
+    width: 100%;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.slider-card:hover img {
+    transform: scale(1.05);
+}
+
