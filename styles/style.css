@@ -6,7 +6,7 @@ body {
 
 .portada-mobile {
   min-height: 80vh;
-  padding-top: 40%;
+  padding-top: 20%;
 }
 
 @media (min-width: 768px) {
