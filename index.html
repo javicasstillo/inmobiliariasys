@@ -15,34 +15,86 @@
   </head>
 
   <body>
-    <header></header>
+    <!-- ================= HEADER ================= -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-rosa fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">Logo</a>
 
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Propiedades</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ================= MAIN ================= -->
     <main>
       <!-- ================= BANNER ================= -->
-      <section id="banner" class="portada d-flex align-items-center">
-        <div class="container py-3">
+      <section id="banner" class="portada portada-mobile d-flex align-items-center">
+        <div class="container py-5">
           <div class="row justify-content-center align-items-center">
             <!-- TEXTO -->
-            <div class="col-12 col-md-6">
-              <div class="d-flex flex-column">
-                <h1 class=" text-rosa text-center text-bebas">
-                  San Rafael
-                </h1>
-                <h1 class=" tamano text-white text-center text-bebas mb-0 ">Propiedades de lujo</h1>
-                
+            <div
+              class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center text-center text-md-start"
+            >
+              <div
+                class="mt-5 mb-4 d-flex justify-content-center gap-2 gap-md-3"
+              >
+                <div class="p-3 bg-rosa rounded bg-opacity-50">
+                  <h1 class="mb-0 text-white text-bebas text-center">+9</h1>
+                  <h3 class="text-white text-bebas text-center">
+                    Años de<br />Experiencia
+                  </h3>
+                </div>
+
+                <div class="p-3 bg-rosa rounded bg-opacity-50">
+                  <h1 class="mb-0 text-white text-bebas text-center">+50</h1>
+                  <h3 class="text-white text-bebas text-center">
+                    Propiedades<br />Entregadas
+                  </h3>
+                </div>
+
+                <div class="p-3 bg-rosa rounded bg-opacity-50">
+                  <h1 class="mb-0 text-white text-bebas text-center">+40</h1>
+                  <h3 class="text-white text-bebas text-center">
+                    Propiedades<br />Disponibles
+                  </h3>
+                </div>
               </div>
+
+              <p class="fs-5 text-white text-center px-2 px-md-0">
+                Nos especializamos en propiedades ubicadas en las mejores zonas de
+                San Rafael, Mendoza. Compromiso, transparencia y acompañamiento en
+                cada operación.
+              </p>
             </div>
 
             <!-- FORM -->
             <div class="col-12 col-md-6">
-              <div class="form ">
+              <div class="form">
                 <div class="card borde p-4 p-md-5 bg-black bg-opacity-50">
                   <h3 class="mb-2 text-bebas text-center tamano2 text-rosa">
-                    Descubre tu nuevo hogar
+                    Descubrí tu nuevo hogar
                   </h3>
 
                   <p class="text-white text-center mb-4">
-                    ¡Contáctanos para recibir la mejor oferta del mercado!
+                    ¡Contactanos para recibir la mejor oferta del mercado!
                   </p>
 
                   <form>
@@ -81,84 +133,15 @@
                 </div>
               </div>
             </div>
+            <!-- /FORM -->
           </div>
-        </div>
-      </section>
-
-      <!-- ================= PROPIEDADES ================= -->
-      <section id="menu-propiedades" class="d-flex align-items-center">
-        <div class="container">
-          <h3 class="text-bebas text-center tamano2">Nuestras Propiedades</h3>
-
-          <div class="row justify-content-center gy-3">
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="card h-100">
-                <div
-                  class="mini-portada-casas d-flex align-items-end justify-content-center"
-                >
-                  <p class="text-bebas text-white tamano2">Casas</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="card h-100">
-                <div
-                  class="mini-portada-departamentos d-flex align-items-end justify-content-center"
-                >
-                  <p class="text-bebas text-white tamano2">Departamentos</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="card h-100">
-                <div
-                  class="mini-portada-locales d-flex align-items-end justify-content-center"
-                >
-                  <p class="text-bebas text-white tamano2">Locales</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6">
-              <div class="card h-100">
-                <div
-                  class="mini-portada-lotes d-flex align-items-end justify-content-center"
-                >
-                  <p class="text-bebas text-white tamano2">Lotes</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6">
-              <div class="card h-100">
-                <div
-                  class="mini-portada-fincas d-flex align-items-end justify-content-center"
-                >
-                  <p class="text-bebas text-white tamano2">Fincas</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ================= DESTACADAS ================= -->
-      <section
-        id="slice-destacadas"
-        class="d-flex flex-column justify-content-center align-items-center bg-body-secondary"
-      >
-        <div class="container">
-          <h3 class="text-bebas text-center tamano">
-            Propiedades Destacadas
-          </h3>
         </div>
       </section>
     </main>
 
-    <footer>
-      <p>&copy; Todos los derechos reservados</p>
+    <!-- ================= FOOTER ================= -->
+    <footer class="text-center py-3">
+      <p class="mb-0">&copy; Todos los derechos reservados</p>
     </footer>
 
     <script

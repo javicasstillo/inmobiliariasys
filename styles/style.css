@@ -4,6 +4,16 @@ body {
   width: 100%;
 }
 
+.portada-mobile {
+  min-height: 80vh;
+  padding-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .portada-mobile {
+    min-height: 100vh;
+  }
+}
 
 @font-face {
     font-family: "bungee";
@@ -44,6 +54,10 @@ body {
     color: #DA9FA7;
 }
 
+.bg-rosa{
+    background-color: #DA9FA7;
+}
+
 .tamano {
     font-size: 5rem;
 }
@@ -57,7 +71,6 @@ body {
 ======================= */
 
 .portada {
-    min-height: 100vh;
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url("../assets/portada.jpg");
