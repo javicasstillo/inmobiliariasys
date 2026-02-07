@@ -144,36 +144,7 @@
    SECCIÓN DESTACADAS
 ======================= */
 
-#slice-destacadas{
+#slice-destacadas {
     min-height: 100vh;
-}
-
-.slider-wrapper {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.slider-track {
-    display: flex;
-    gap: 2rem;
-    will-change: transform;
-}
-
-.slider-card {
-    min-width: 250px;
-    text-align: center;
-    cursor: pointer;
-    flex-shrink: 0;
-}
-
-.slider-card img {
-    width: 100%;
-    display: block;
-    transition: transform 0.4s ease;
-}
-
-.slider-card:hover img {
-    transform: scale(1.05);
 }
 
