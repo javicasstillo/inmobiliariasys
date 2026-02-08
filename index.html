@@ -12,6 +12,7 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
   <body>
@@ -19,7 +20,7 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-rosa fixed-top" data-bs-theme="dark">
         <div class="container">
-          <a class="navbar-brand" href="#"><img src="./assets/logo.png" alt="logo" class="logo"></a>
+          <a class="navbar-brand" href="#banner"><img src="./assets/logo.png" alt="logo" class="logo"></a>
 
           <button
             class="navbar-toggler"
@@ -32,10 +33,10 @@
 
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Propiedades</a></li>
+              <li class="nav-item"><a class="nav-link active" href="#banner">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="#menu-propiedades">Propiedades</a></li>
               <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
               <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
             </ul>
           </div>
@@ -139,8 +140,8 @@
 	
 <!-- ================= PROPIEDADES ================= -->
       <section id="menu-propiedades" class="d-flex align-items-center">
-        <div class="container py-3">
-          <h3 class="text-bebas text-center tamano2">Nuestras Propiedades</h3>
+        <div class="container py-3" data-aos="fade-up">
+          <h3 class="text-bebas text-center tamano2" >Nuestras Propiedades</h3>
 
           <div class="row justify-content-center gy-3">
             <div class="col-12 col-md-6 col-lg-4">
@@ -208,5 +209,10 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
