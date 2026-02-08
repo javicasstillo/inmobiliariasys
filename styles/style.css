@@ -178,15 +178,6 @@ body {
     height: 200px;
 }
 
-#servicios .card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
-
-#servicios .card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-}
 
 
 @media screen and (max-width: 767px) {
