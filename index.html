@@ -196,48 +196,6 @@
           </div>
         </div>
       </section>
-
-<section id="propiedades-destacadas" class="bg-body-secondary py-5">
-  <div class="container text-center mb-4">
-    <h3 class="text-bebas tamano2">Destacadas</h3>
-  </div>
-
-  <div class="slider-infinito">
-    <div class="slider-track">
-      <!-- Primer set -->
-      <div class="slide">
-        <img src="./assets/d1.jpg" alt="Destacada 1" />
-      </div>
-      <div class="slide">
-        <img src="./assets/d2.jpg" alt="Destacada 2" />
-      </div>
-      <div class="slide">
-        <img src="./assets/d3.jpeg" alt="Destacada 3" />
-      </div>
-      <div class="slide">
-        <img src="./assets/d4.jpg" alt="Destacada 4" />
-      </div>
-
-      <!-- Segundo set (duplicado para loop infinito) -->
-      <div class="slide">
-        <img src="./assets/d1.jpg" alt="Destacada 1" />
-      </div>
-      <div class="slide">
-        <img src="./assets/d2.jpg" alt="Destacada 2" />
-      </div>
-      <div class="slide">
-        <img src="./assets/d3.jpeg" alt="Destacada 3" />
-      </div>
-      <div class="slide">
-        <img src="./assets/d4.jpg" alt="Destacada 4" />
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
     </main>
 
     <!-- ================= FOOTER ================= -->
@@ -255,66 +213,5 @@
     <script>
       AOS.init();
     </script>
-    <script>
-  const slider = document.querySelector(".slider-infinito");
-  const track = document.querySelector(".slider-track");
-
-  let isDown = false;
-  let startX;
-  let scrollLeft;
-
-  // Para que no se corte la animación al interactuar
-  slider.addEventListener("mouseenter", () => {
-    track.style.animationPlayState = "paused";
-  });
-
-  slider.addEventListener("mouseleave", () => {
-    if (!isDown) track.style.animationPlayState = "running";
-  });
-
-  // Mouse
-  slider.addEventListener("mousedown", (e) => {
-    isDown = true;
-    slider.classList.add("active");
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-    track.style.animationPlayState = "paused";
-  });
-
-  slider.addEventListener("mouseup", () => {
-    isDown = false;
-    slider.classList.remove("active");
-    track.style.animationPlayState = "running";
-  });
-
-  slider.addEventListener("mousemove", (e) => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 1.5; // velocidad del drag
-    slider.scrollLeft = scrollLeft - walk;
-  });
-
-  // Touch (mobile)
-  slider.addEventListener("touchstart", (e) => {
-    isDown = true;
-    startX = e.touches[0].pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-    track.style.animationPlayState = "paused";
-  });
-
-  slider.addEventListener("touchend", () => {
-    isDown = false;
-    track.style.animationPlayState = "running";
-  });
-
-  slider.addEventListener("touchmove", (e) => {
-    if (!isDown) return;
-    const x = e.touches[0].pageX - slider.offsetLeft;
-    const walk = (x - startX) * 1.5;
-    slider.scrollLeft = scrollLeft - walk;
-  });
-</script>
-
   </body>
 </html>
