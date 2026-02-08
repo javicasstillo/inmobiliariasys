@@ -44,7 +44,7 @@ body {
 }
 
 .bg-rosa{
-    background-color: #DA9FA7;
+    background-color: #DA9FA7 !important;
 }
 
 .tamano {
