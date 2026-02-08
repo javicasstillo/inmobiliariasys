@@ -55,6 +55,22 @@ body {
     font-size: 3rem;
 }
 
+.logo {
+  width: 120px;   /* tamaño fijo */
+  max-width: 100%;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /* =======================
    PORTADA PRINCIPAL
 ======================= */
