@@ -85,6 +85,15 @@ body {
     background-size: cover;
 }
 
+.portada2{
+    min-height: 100vh ;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../assets/portada.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
 /* =======================
    SECCIÓN PROPIEDADES
 ======================= */
@@ -194,4 +203,8 @@ body {
     .centrado{
         margin: auto; 
     }   
+}
+
+#login{
+    min-height: 100vh;
 }
