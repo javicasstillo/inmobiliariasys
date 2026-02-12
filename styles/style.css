@@ -47,6 +47,10 @@ body {
     background-color: #DA9FA7 !important;
 }
 
+.bg-verde{
+    background-color: #25D366 !important;
+}
+
 .tamano {
     font-size: 5rem;
 }
@@ -99,7 +103,7 @@ body {
 ======================= */
 
 #menu-propiedades {
-    min-height: 150vh;
+    min-height: 120vh;
 }
 
 /* La card no deja que el zoom se salga */
@@ -181,7 +185,7 @@ body {
 ======================= */
 
 #servicios{
-    min-height: 90vh;
+    min-height: 100vh;
 }
 
 .altura{
@@ -204,6 +208,37 @@ body {
         margin: auto; 
     }   
 }
+
+
+/* =======================
+   SECCIÓN NOSOTROS
+======================= */
+
+#nosotros{
+    min-height: 120vh;
+}
+
+.flecha-negra {
+  filter: invert(1);
+}
+
+@media (max-width: 576px) {
+  #nosotros .carousel-item .row {
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+
+  #nosotros .carousel-item .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* Ocultamos la segunda card del slide en mobile */
+  #nosotros .carousel-item .col-12:nth-child(2) {
+    display: none;
+  }
+}
+
 
 #login{
     min-height: 100vh;
